@@ -19,12 +19,13 @@ The World Development Indicators (WDI) is the World Bank's most comprehensive co
 
 1. **Country.csv**
 
- 247 rows representing the countries.
+ 247 rows representing the countries. \
  31 columns describing various attributes of the countries.
 
 2. **Indicators.csv**
 
-5656458 rows representing data instances. 6 columns describing indicators of the countries. \
+5656458 rows representing data instances. \
+6 columns describing indicators of the countries. 
 
 #### Need for using Big Data Technologies
 
