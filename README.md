@@ -51,13 +51,32 @@ The size of this file is about 550MB, necessitating the use of Apache Spark impl
 
 
 ```
-  %scala 
+%scala 
 
-val country = sqlContext.read.format("csv")
+val Indicators = sqlContext.read.format("csv")
   .option("header", "true")
   .option("inferSchema", "true")
-  .load("/FileStore/tables/Country.csv")
+  .load("/FileStore/tables/Indicators.csv")
 
-display(country)
+display(Indicators)
 ```
+
+### Create or Replace Temporary view
+
+Temporary view allows to use SQL queries on the DataFrame as if it were an SQL table.
+
+```
+%scala
+
+Indicators.createOrReplaceTempView("Indicators")
+```
+
+### Write desired SQL queries for data visualization and analysis
+
+```
+%sql 
+
+select value as Youth_Literacy_Rate,ShortName from Indicators A JOIN Country N ON A.CountryCode = N.CountryCode  where IndicatorCode  = "SE.ADT.1524.LT.ZS" and Year = 2010 order by Youth_Literacy_Rate Desc; 
+```
+
 
