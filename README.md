@@ -74,9 +74,13 @@ Indicators.createOrReplaceTempView("Indicators")
 ### Write desired SQL queries for data visualization and analysis
 
 ```
-%sql 
+%sql
 
-select value as Youth_Literacy_Rate,ShortName from Indicators A JOIN Country N ON A.CountryCode = N.CountryCode  where IndicatorCode  = "SE.ADT.1524.LT.ZS" and Year = 2010 order by Youth_Literacy_Rate Desc; 
+select CountryName,Value,Year from Indicators where IndicatorCode in ("NY.GNP.PCAP.CD") and Year = 1962 and CountryName in ("Japan","China","France","United States") order by Value asc;
 ```
+
+#### Output
+![image](https://github.com/spshah1701/World-Development-Indicators/assets/142957290/5203ac11-ceab-49ca-bc49-f02b7f1fe50b)
+
 
 
