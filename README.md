@@ -42,7 +42,7 @@ The size of this file is about 550MB, necessitating the use of Apache Spark impl
 - Create a free Databricks Community Edition account
 - Create a new cluster and wait till it is active and running
 - Upload the *World Development Indicators.dbc* Notebook to Databricks and connect it to the above cluster.
-- Upload the data after downloading it from the [source](https://databank.worldbank.org/source/world-development-indicators) (CSV files) to Databricks.
+- Upload the data (CSV files) to Databricks after downloading it from the [source](https://databank.worldbank.org/source/world-development-indicators).
 - Run the cells, view and analyse the data as desired.
 
 
