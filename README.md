@@ -37,7 +37,7 @@ The size of this file is about 550MB, necessitating the use of Apache Spark impl
 **Note**: This link will be valid till 01-06-2024.
 
 
-## Installation
+## Project Setup and Replication
 
 - Create a free Databricks Community Edition account
 - Create a new cluster and wait till it is active and running
